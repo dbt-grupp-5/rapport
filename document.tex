@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[english]{report}
 
-\title{Title}
+\title{}
 \author{Namn Efternamn (cas0123@student.umu.se)}
 
 \date{\today}
@@ -15,33 +15,37 @@
     Umeå University
   }
   \rhead{\today}
+
   \begin{abstract}
 
   \end{abstract}
+
   \cfoot{
     Design-Build-Test\\
     Supervisor: Krister Wiklund
   }
 \end{titlepage}
 
-\lhead{\theauthor}
-\rhead{\thetitle\\\today}
+\lhead{\thetitle}
+\rhead{\today}
 \cfoot{\thepage}
 
 \input{projektgruppen.tex}
 
-\newpage
+\clearpage
 
 \tableofcontents
 \clearpage
 
 
-
-\clearpage
-
 \input{introduction.tex}
+
 \input{floatingPlatform.tex}
+\clearpage
 \input{radioController.tex}
+\clearpage
+\input{largeScaleTesting.tex}
+
 \appendix
 \input{appendix.tex}
 
