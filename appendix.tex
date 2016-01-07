@@ -41,14 +41,14 @@ The electronic components mounted on the platform are:
   \item 1 blue power-LED (mounted on the cover)
   \item 1 220~$\Omega$ resistor
   \item 1 power switch (mounted on the cover)
-  \item 1 0.1 $\mu$F capacitor rated for at least 12V \footnote{\label{fotnot_app} These items can be replaced with a pre built 12~V to 5~V power supply. The electronics are connected according to the circuit diagrams, and the files in \texttt{RBR\_driver.zip} is loaded onto the Arduino.} \todo{Hårdkodade fotnoter (sorry!) så om vi har fler någonstans måste vi ändra}
-  \item 1 22 $\mu$F capacitor rated for at least 5V \footnotemark[1]
-  \item 1 L4940V5 linear regulator \footnotemark[1]
-  \item Protoboard to build the 5~V PSU on \footnotemark[1]
+  \item 1 0.1 $\mu$F capacitor rated for at least 12V \footnote{\label{fotnot_app} These items can be replaced with a pre built 12~V to 5~V power supply. The electronics are connected according to the circuit diagrams, and the files in \texttt{RBR\_driver.zip} is loaded onto the Arduino.} %\textsuperscript{\ref{fotnot_app}}%\footnotemark[1] 
+  \item 1 22 $\mu$F capacitor rated for at least 5V \textsuperscript{\ref{fotnot_app}}
+  \item 1 L4940V5 linear regulator \textsuperscript{\ref{fotnot_app}}%\footnotemark[1]
+  \item Protoboard to build the 5~V PSU on \textsuperscript{\ref{fotnot_app}} \todo{insert circuit diagram reference in footnote}
+     %\footnotemark[1] 
   \item A few meter mains cable 2x1.50~mm$^2$ unshielded
   \item A few meter signal cable
-  \item A few sensor cables and connectors (for servo, ESC, and power to RC
-    receiver)
+  \item A few sensor cables and connectors (for servo, ESC, and power to RC receiver) 
   \item Heatshrink tubing to cover connections
   \item A few blade receptacle 4.8x0.5~mm fully insulated, blade terminal red
     4.8x0.8~mm, ring cable lug 4.3~mm used to connect the cables together.
@@ -97,3 +97,5 @@ The cover for the electronics are made from 13 pieces of 3~mm thick acrylic glas
 glued together. On top of this cover the power switch is connected. This cover
 was fastened to the platform using handmade angle brackets and a nut.
 
+\section{Specification of requirements}
+\label{kravspec}
