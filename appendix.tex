@@ -28,23 +28,25 @@ The floating platform is built up from the following parts:
 
 \subsection{Electronics}
 
+\crefformat{footnote}{#2\footnotemark[#1]#3}
+
 The electronic components mounted on the platform are:
 
 \begin{itemize}
   \item 1 Arduino Leonardo
   \item 1 Dual VNH5019 Motor Driver Shield
-  \item 2 brushless motors
-  \item 2 ESC that matches the brushless motors
+  \item 2 2725 Brushless Outrunner Motors 1600kv
+  \item 2 ESC who matches the brushless motors
   \item 2 plastic propellers
   \item 1 15~kg servo
   \item 1 R9D Radio Control Receiver
   \item 1 blue power-LED (mounted on the cover)
   \item 1 220~$\Omega$ resistor
   \item 1 power switch (mounted on the cover)
-  \item 1 0.1 $\mu$F capacitor rated for at least 12V \textbf{*}
-  \item 1 22 $\mu$F capacitor rated for at least 5V \textbf{*}
-  \item 1 L4940V5 linear regulator \textbf{*}
-  \item Protoboard to build the 5~V PSU on \textbf{*}
+  \item 1 0.1 $\mu$F capacitor rated for at least 12V \footnote{\label{fotnot_app} These items can be replaced with a pre built 12~V to 5~V power supply. The electronics are connected according to the circuit diagrams, and the files in \texttt{RBR\_driver.zip} is loaded onto the Arduino.} \todo{Hårdkodade fotnoter (sorry!) så om vi har fler någonstans måste vi ändra}
+  \item 1 22 $\mu$F capacitor rated for at least 5V \footnotemark[1]
+  \item 1 L4940V5 linear regulator \footnotemark[1]
+  \item Protoboard to build the 5~V PSU on \footnotemark[1]
   \item A few meter mains cable 2x1.50~mm$^2$ unshielded
   \item A few meter signal cable
   \item A few sensor cables and connectors (for servo, ESC, and power to RC
