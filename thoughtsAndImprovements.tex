@@ -1,23 +1,93 @@
 \section{Thoughts Behind Construction and Suggested Improvements}
-\subsection{Floating Platform}
-The initial design for the vehicle was a simple platform with two pontoons, one on either side, and that all other components would be mounted on top of this platform.  The pontoons are constructed from XPS cell foam, which is available in hardware and construction stores. The advantage of XPS over e.g. EPS foam, while more expensive, is that the material is denser and doesn’t absorb water. Cell foam is easy to form and work with, non-hazardous, and offers excellent buoyancy.
 
-As the development progressed, the load that the platform would be required to bear was roughly estimated and served as a basis for the size of the pontoons. They were estimated to displace 20 kg with some margin to the water surface. The platform itself, constructed from glulam wood, was attached to the pontoons with 10 mm threaded rods. An advantage with wood is that it doesn’t sink, is recyclable, cheap, and easy to work with using simple tools. A disadvantage with wood is that it’s heavy. A hollow aluminium construction, e.g. sealed square tubing, could also be buoyant, and offer lighter weight. 
+\subsection{Floating Platform}\todo{repetition}
+The initial design for the vehicle was a simple platform with two pontoons, one
+on either side, and that all other components would be mounted on top of this
+platform.  The pontoons are constructed from XPS cell foam, which is available
+in hardware and construction stores. The advantage of XPS over e.g. EPS foam,
+while more expensive, is that the material is denser and doesn’t absorb
+water. Cell foam is easy to form and work with, non-hazardous, and offers
+excellent buoyancy.
 
-To distribute weight as evenly as possible, the RBR modules was placed at either end in the open space between the pontoons, and the rather heavy batteries were placed above the center of each pontoon. The batteries were placed in a slot in the platform to reduce weight, lower center of gravity and increase stability. The available space for electronics was thus limited to the middle of the platform, between the RBR modules.
+As the development progressed, the load that the platform would be required to
+bear was roughly estimated and served as a basis for the size of the pontoons.
+They were estimated to displace 20 kg with some margin to the water surface.
+The platform itself, constructed from glulam wood, was attached to the pontoons
+with 10 mm threaded rods. An advantage with wood is that it doesn’t sink, is
+recyclable, cheap, and easy to work with using simple tools. A disadvantage
+with wood is that it’s heavy. A hollow aluminium construction, e.g. sealed
+square tubing, could also be buoyant, and offer lighter weight.
 
-To improve deflection of head on collisions, a rounded front bumper was added which also serves as a means of adding distance between the platform and any side obstacles. Without this bumper, the finished vehicle could be hard to manoeuvre out of tight spots.
+To distribute weight as evenly as possible, the RBR modules was placed at
+either end in the open space between the pontoons, and the rather heavy
+batteries were placed above the center of each pontoon. The batteries were
+placed in a slot in the platform to reduce weight, lower center of gravity and
+increase stability. The available space for electronics was thus limited to the
+middle of the platform, between the RBR modules.
+
+To improve deflection of head on collisions, a rounded front bumper was added
+which also serves as a means of adding distance between the platform and any
+side obstacles. Without this bumper, the finished vehicle could be hard to
+manoeuvre out of tight spots.
 
 \subsubsection{RBR modules}
-To modularize the construction, we choosed that the RBRs should be self-contained with drive assembly and wave baffles in a module. This has the advantage of lowering the weight of the platform and reducing the transport dimensions. Beyond this the modularization gives the advantage that multipe RBR modules can be built and speed up the refill process when changing the cleansing material inside the RBR. If one has four RBR modules the unused modules can be preloaded and one only has to change the modules when refilling, maximizing the time the vehicle can spend cleaning the environment. It also allowed development and initial testing of the drive assembly and measurements of power consumption without a finished floating platform. 
+To modularize the construction, we choosed that the RBRs should be
+self-contained with drive assembly and wave baffles in a module. This has the
+advantage of reducing the weight of the platform for transport and reducing the
+transport dimensions. Furthermore, the modularization gives the advantage that
+multipe RBR modules can be built and speed up the refill process when changing
+the reactant inside the RBR. If one has four RBR modules the unused
+modules can be preloaded and one only has to change the modules when refilling,
+maximizing the time the vehicle can spend cleaning the environment. It
+also allowed development and initial testing of the drive assembly and
+measurements of power consumption without a finished floating platform.
 
-On the top baffle of the RBR module we have attached a modified screwdriver to drive and attach a RBR with a shaft. The choice to use a screwdriver was to reduce cost, as it provides a suitably strong DC-motor together with a rugged chuck which is insensitive to off-axial loads (non-axial forces like roll forces, and forces from a not perfectly lined up construction). It also speeds up disassembly of the RBR axle from the drive assembly. Both baffles, with shaft guide and drive assembly is mounted above the surface, with only the RBR axle and RBR protruding below the surface. To reduce the formations of vortices induced by the rotation of the RBR, a wave baffle was mounted along the RBR axle to stop air from reaching the RBR.
+On the top baffle of the RBR module we have attached a modified screwdriver to
+drive and attach a RBR with a shaft. The choice to use a screwdriver was to
+reduce cost, as it provides a suitably strong DC-motor together with a rugged
+chuck which is insensitive to off-axial loads (non-axial forces like roll
+forces, and forces from a not perfectly lined up construction). It also
+speeds up disassembly of the RBR axle from the drive assembly.
+A disadvantage of using a modified screwdriver is that a custom mount had
+to be manufactured. Another disadvantage was that an Arduino with motor
+controller shield, which in turn needed a separate 5~V line, was needed to power
+and control the screwdriver motors via RC. This is a somewhat complicated solution,
+but relatively cost effective.
+
+Both baffles, with shaft guide and drive assembly is mounted above the surface,
+with only the RBR axle and RBR protruding below the surface. To reduce the
+formations of vortices induced by the rotation of the RBR, a wave baffle
+was mounted along the RBR axle to stop air from reaching the RBR.
 
 \subsubsection{Propulsion}
-At an early stage of development, it was chosen in consultation with an RC-expert that we should use air-propellers for propulsion, as it is better than water propellers at lower speeds. The advantages of this is simplicity of construction, cost effectiveness, and that water-electricity contact concerns are more easily managed. Furthermore air propellers will not stir up the bottom of a lake, and thus not affect the water cleaning properties of the vehicle.
-Disadvantages of water propellers, such as motors intended for electric RC-boats, are that they have poor low speed maneuverability. Disadvantages of air-propulsion are the bulkier form factor, as bigger rudders and propellers are needed to propel the vehicle. There is also a safety concern as air propellers are more likely to get in contact with hands, hair, and other vulnerable body parts. To prevent some of these possible incidents to happen, an acrylic plastic frame were installed around the propellers.
+At an early stage of development, it was chosen in consultation with an
+RC-expert that we should use air-propellers for propulsion, as it is better
+than water propellers at lower speeds. The advantages of this is simplicity of
+construction, cost effectiveness, and that water-electricity contact concerns
+are more easily managed. Furthermore air propellers will not stir up the bottom
+of a lake, and thus not affect the water cleaning properties of the vehicle.
 
-We chose to use two air propellers mounted in the rear of the platform together with two large rudders controlled by a single servo, the control of which is described in the controller section. The complete motor-rudder assembly was laser cut from acrylic glass which is a cheap, low weight material. However, the assembly proved to be a bit fragile, and some care was needed when handling the floating platform, to prevent damaging any of the delicate parts. Schematics and design plans can be found in the appendix.
+Disadvantages of water propellers, such as motors intended for electric
+RC-boats, are that they have poor low speed maneuverability. Disadvantages of
+air-propulsion are the bulkier form factor, as bigger rudders and propellers
+are needed to propel the vehicle. There is also a safety concern as air
+propellers are more likely to get in contact with hands, hair, and other
+vulnerable body parts. To prevent some of these possible incidents to happen,
+an acrylic plastic frame were installed around the propellers.
+A further improvement would be to enclose the propellers in a rigid mesh.
+
+We chose to use two air propellers mounted in the rear of the platform together
+with two large rudders controlled by a single servo, the control of which is
+described in the controller section. The complete motor-rudder assembly was
+laser cut from acrylic glass which is a cheap, low weight material. However,
+the assembly proved to be a bit fragile, and some care was needed when
+handling the floating platform, to prevent damaging any of the delicate
+parts. Schematics and design plans can be found in \cref{sec:appendix-a}.
 
 \subsubsection{Water Protection}
-While the covers over the RBR-modules and electronics helps deflect smaller water splashes from reaching the electronics, it is probably not enough to fully protect the vehicle from heavy rain, or being submerged into the water. Should the equipment be in need of better protection, the electronic equipment could be mounted in an IP classified enclosure. This was not done because of budget restrictions.
+While the covers over the RBR-modules and electronics helps deflect smaller
+water splashes from reaching the electronics, it is probably not enough to
+fully protect the vehicle from heavy rain, or being submerged into the water.
+Should the equipment be in need of better protection, the electronic equipment
+could be mounted in an IP classified enclosure. This was not done because of
+budget restrictions.
