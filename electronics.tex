@@ -1,8 +1,21 @@
 \section{Electronics}
 
-\begin{figure}[h]
-   \centering
-   \includegraphics[width=.75\textwidth]{circuit}
-   \caption{The circuit diagram of the electronics installed in floating platform.}
-   \label{fig:circuit}
-\end{figure}
+The design and implementation of the electronics which powers the vehicle revolves
+around a system of two 12~V led-acid batteries connected in parallel. These are connected
+to a power distributer, which in turn connects to the motor controller shield, propulsion
+motor electronic speed controllers (ESCs), the R9D radio receiver,
+and 12~V to 5~V adapter which supplies power to the Arduino.
+
+The propulsion motor ESCs and air rudder servo receives their signals directly from the R9D receiver,
+but as the RBR module motor assembly is a custom part it needed a different means of speed regulation.
+This is the purpose of the Arduino with motor shield. The Arduino reads a channel from the receiver
+and sends the appropriate current from the motor shield to the RBR motors.
+
+The Arduino can in theory be powered by the motor shield, negating the need for a
+separate 5~V power supply. However, initial tests showed power fluctuations when all components
+where used simultaneously. Thus the 5~V supply was added to provide stable power.
+
+The power to all electronic components can be switched off using the power switch on the 
+electronic cover, and a power-LED indicates the power status.
+Parts lists for the electronic components can be seen in \cref{sec:appendix-electronics},
+and circuit diagrams can be seen in \cref{sec:appendix-b}.
