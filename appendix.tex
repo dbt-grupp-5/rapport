@@ -169,3 +169,24 @@ The following is a translation from the original specification of requirements.
     \item We should produce a final film test which can be used to demonstrate the effectiveness of our solution by reducing the pH of a solution of sodium hydroxide with the product, as well as demonstrate purification using phenolphthalein.
     \item Animation, film or photos to be developed for marketing purposes to show how the end product is used, and in an attractive way present the positives of the product.
 \end{enumerate}
+
+\newpage
+    \section{Source code}
+    Included below are the source code used on the arduino to drive the RBR motor shield.
+
+\subsection{RBR\_driver/RBR\_driver.ino}
+The main script controlling the RBR motors.
+\lstinputlisting[language=c++]{./RBR_driver/RBR_driver.ino}
+\subsection{RBR\_driver/DualVNH5019MotorShield.h}
+The h file used taken from \url{https://github.com/pololu/dual-vnh5019-motor-shield} \lstinputlisting[language=c++]{./RBR_driver/DualVNH5019MotorShield.h} 
+\subsection{RBR\_driver/DualVNH5019MotorShield.cpp}
+The c++ file taken from \url{https://github.com/pololu/dual-vnh5019-motor-shield}
+\lstinputlisting[language=c++]{./RBR_driver/DualVNH5019MotorShield.cpp}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "document"
+%%% End: 
+
