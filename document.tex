@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[english]{report}
 \usepackage{titling}
+\usepackage[titletoc]{appendix}
 \setlength{\droptitle}{-3em}
 
 \title{Floating Vehicle for Environmental \\ Cleaning of Large Liquid Masses}
@@ -56,19 +57,17 @@ Rasmus Nyman (rany0004@student.umu.se)}
 
 \input{projektgruppen.tex}
 \clearpage
-
 \tableofcontents
 \clearpage
 
 \input{introduction.tex}
 \clearpage
 \input{floatingPlatform.tex}
+\input{thoughtsAndImprovements.tex}
 \clearpage
 \input{radioController.tex}
 \clearpage
 \input{electronics.tex}
-\clearpage
-\input{thoughtsAndImprovements.tex}
 \clearpage
 \input{rening.tex}
 \clearpage
@@ -76,7 +75,8 @@ Rasmus Nyman (rany0004@student.umu.se)}
 \clearpage
 \input{complienceToSpec.tex}
 \clearpage
-
+\input{acknowledgments.tex}
+\clearpage
 \begin{thebibliography}{9}
     \bibitem{ford}
         Ford, M. A,
@@ -109,7 +109,8 @@ Rasmus Nyman (rany0004@student.umu.se)}
 \clearpage
 
 \appendix
-\input{appendix.tex}
-
+\begin{appendices}
+  \input{appendix.tex}
+\end{appendices}
 \end{document}
 
