@@ -1,18 +1,18 @@
 \section{Electronics}
 
-The design and implementation of the electronics powering the vehicle, revolves around a system of two parallel connected 12~V led-acid batteries. These are connected to a power distributor, which in turn connects to the motor controller shield, propulsion
-motor electronic speed controllers (ESCs), 
-a 12~V to 5~V power supply that supplies power to the Arduino, and the the R9D radio receiver.
+The design and implementation of the electronics powering the vehicle revolves around a system of two parallel connected 12~V led-acid batteries. These are connected to a power distributor, which in turn connects to the motor controller shield, propulsion
+motor electronic speed controllers (ESCs),
+and a 12~V to 5~V power supply, which in turn supplies power to the Arduino and the the R9D radio receiver.
 
 The propulsion motor ESCs and air rudder servo receive their signals directly from the R9D receiver. This was not done for the RBR module motor assembly, as it is a custom part and thus needed a different means of speed regulation. This is the purpose of the Arduino with motor shield. The Arduino reads a channel from the receiver and sends the appropriate current from the motor shield to the RBR motors.
 
 In theory, the Arduino can be powered by the motor shield, negating the need for a separate 5~V power supply.
-However, initial tests showed power fluctuations when all components were used simultaneously since the Arduino could not supply enough power to drive the servo. 
+However, initial tests showed power fluctuations when all components were used simultaneously since the Arduino could not supply enough power to drive the servo.
 Thus the 5~V supply was added to provide stable power.
 
 The power to all electronic components can be turned off using the power switch on the electronic cover, where a power-LED indicates the power status.  Part lists for the electronic components can be seen in \cref{sec:appendix-electronics},
 while circuit diagrams can be seen in \cref{sec:appendix-b}.
-%%% Local Variables: 
+%%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "document"
-%%% End: 
+%%% End:
